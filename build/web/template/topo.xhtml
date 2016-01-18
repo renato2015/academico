@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Projeto Acadêmico</title>
+        <h:outputStylesheet library="css" name="screen.css"></h:outputStylesheet>
+        <h:outputStylesheet library="css" name="imagem.css"></h:outputStylesheet>
+    </h:head>
+    <h:body>
+        <ui:composition>
+            <!--<h:graphicImage library="images" name="img.jpg"  style="width: 100%; height: 100%; position: absolute;"></h:graphicImage>-->
+            <div id="page-top-outer">
+                <div id="page-top">
+                    <div id="logo">
+                        <h3 style="font-size: 32px; color: #fff">Projeto Acadêmico</h3>
+                    </div>
+                    <div style="float: right;margin-top: 2%;">
+                        Usuário logado, #{login.getbAluno().nome}
+                    </div>
+                </div>
+            </div>
+        </ui:composition>
+    </h:body>
+</html>

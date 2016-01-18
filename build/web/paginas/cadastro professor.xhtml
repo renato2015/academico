@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:body>
+        <ui:composition template="../template/layout.xhtml">
+            <ui:define name="centro">
+                <div id="centro">
+                    <h:form>
+                        <p:growl id="msg"/>
+                        <p:panel menuTitle="Cadastro de professor">
+                            <p:panelGrid columns="2">
+                                <p:outputLabel value="Nome" />
+                                <p:inputText value="#{professor.getbProfessor().nome}" required="true" requiredMessage="Campo nome é obrigatório!" />
+                                <p:outputLabel value="Cpf" />
+                                <p:inputText value="#{professor.getbProfessor().cpf}" required="true" requiredMessage="Campo cpf é obrigatório!" />
+                                <p:outputLabel value="Situação" />
+                                <p:inputText value="#{professor.getbProfessor().situacao}" required="true" requiredMessage="Campo situação é obrigatório!" />
+                            </p:panelGrid>
+                            <br />
+                            <p:panelGrid columns="4">
+                                <p:commandButton value="Salvar" update="msg" action="#{professor.salvar()}" />
+                                <p:commandButton value="Excluir" update="msg" action="#{professor.excluir()}" />
+                                <p:commandButton value="Alterar" update="msg" action="#{professor.alterar()}" />
+                                <p:commandButton value="Limpar" update="msg" />
+                            </p:panelGrid>
+                        </p:panel>
+
+                    </h:form>
+                </div>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

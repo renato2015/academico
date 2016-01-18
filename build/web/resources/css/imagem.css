@@ -1,0 +1,63 @@
+/*
+    Created on : 13/10/2015, 13:35:00
+    Author     : Renato Borges Cardoso
+*/
+
+.botao .ui-button{
+    width: 120px !important;
+    height: 28px !important;
+}
+
+.ui-state-default .gravar{
+    background-image: url("imagens/SALVAR.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .adicionar{
+    background-image: url("imagens/ADICIONAR.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .alerta{
+    background-image: url("imagens/ALERTA.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .busca{
+    background-image: url("imagens/BUSCA.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .apagar{
+    background-image: url("imagens/APAGAR.png")!important;
+    position: absolute;
+}
+
+.ui-menuitem-link .ui-corner-all .sair{
+    background-image: url("imagens/SAIR.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .ok{
+    background-image: url("imagens/OK.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .alterar{
+    background-image: url("imagens/ALTERAR.png")!important;
+    position: absolute;
+}
+
+.ui-state-default .limpar{
+    background-image: url("imagens/limpar.jpg")!important;
+    position: absolute;
+}
+
+.ui-state-default .index{
+    background-image: url("resources/imagens/OK.png")!important;
+}
+
+.ui-state-default .pesq{
+    background-image: url("imagens/OK.png")!important;
+    position: absolute;
+}

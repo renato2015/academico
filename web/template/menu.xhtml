@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:body>
+        <div id="left" style="float:left; margin-top: 25px;margin-left: 15px; width: 330px;">
+            <h:form id="menu">
+                <p:slideMenu style="width:300px; height: 100%;min-height: 200px;">
+                    <p:submenu label="Cadastros" >
+                        <p:menuitem value="Cadastro de alunos" ajax="true" outcome="/paginas/cadastro aluno.xhtml" />
+                        <p:menuitem value="Cadastro de professor" ajax="true" outcome="/paginas/cadastro professor.xhtml" />
+                    </p:submenu>
+                    <p:submenu label="Gerencial" >
+                        <p:menuitem value="Alterar senha" ajax="true" outcome="/paginas/alterar senha.xhtml" />
+                    </p:submenu>
+                    <p:submenu label="Relatórios" >
+                        <p:menuitem value="Relatório de alunos" outcome="/paginas/relatorio aluno.xhtml" />
+                        <p:menuitem value="Relatório de professores"  />
+
+                    </p:submenu>
+                    <p:menuitem value="Sair" action="#{login.deslogar()}" />
+                </p:slideMenu>
+            </h:form>
+        </div>
+    </h:body>
+</html>
+
